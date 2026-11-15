@@ -114,5 +114,23 @@ footer {
   <br>ALL RIGHTS RESERVED
 </footer>
 
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+
+  import { getAuth } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
+  const firebaseConfig = {
+  apiKey: "AIzaSyDQv5fHUsT7oiktxltMBHzAYnIYbnQr1g0",
+  authDomain: "transformation-with-pranav.firebaseapp.com",
+  projectId: "transformation-with-pranav",
+  storageBucket: "transformation-with-pranav.firebasestorage.app",
+  messagingSenderId: "485699517901",
+  appId: "1:485699517901:web:7d830c2dc3fd2964735884"
+};
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+</script>
+  
 </body>
 </html>
